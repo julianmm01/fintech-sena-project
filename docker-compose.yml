@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15
+    container_name: fintech_db
+    environment:
+      POSTGRES_USER: julian_admin
+      POSTGRES_PASSWORD: sena_password
+      POSTGRES_DB: fintech_db
+    ports:
+      - "5432:5432"
